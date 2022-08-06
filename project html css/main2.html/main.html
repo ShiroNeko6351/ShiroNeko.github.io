@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body> 
+    <div class="fContainer">
+        </a>
+        <nav class="wrapper">
+            <div class="brand">
+                <div class="firstname">shiro</div>
+                <div class="lastname">neko</div>
+
+            </div>
+            <ul class="navigation">
+                <li><a href="about me.html">about me</a></li>
+                <li><a href="shiro logo.png" class="active">achievement</a></li>
+                <li><a href="shiro logo.png">partner</a></li>
+                <li><img src="shiro logo.png" alt="..." /></li>
+            </ul>
+        </nav>
+    </div>
+    <h2>
+        <dl>
+            <li style="--clr:#0aff01;">
+                <a href="https://wa.me/+6281294763785"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+            <li style="--clr:#e206ab;">
+                <a href="https://www.instagram.com/shiro_nek6351/"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li style="--clr:#ff0000;">
+                <a href="https://www.youtube.com/channel/UCM1DYbQ_geOn9yMDs_oF1HA"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+        </dl>
+    </h2>
+    <footer>
+        <div class="footer-bottom">
+        <small>2022 &copy; ShiroNeko All Rights Reserved
+            
+        </small>
+        </div>
+    </footer>
+</body>
+<style> 
+    html{
+         background: url('program.jpg')no-repeat center fixed;
+         -webkit-background-size:cover;
+         -moz-background-size:cover;
+         -o-backgroun-size:cover;
+         background-size:cover;
+    }
+    h1{
+        color: rgb(0, 0, 0);
+        mix-blend-mode: multiply;
+        position: static;
+        text-align: center;
+        font-family: 'arial';
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: large;
+
+                
+    }
+</style>
+</html>
+
+<style>
+    *, 
+html, 
+body {
+  margin: 0;  
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.fContainer {
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+   width: 100%;
+   height: 100vh;
+   background-image: "program.jpg";
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+   width: 10000px;
+   height: 45px;
+   background-color: rgb(12, 14, 19);
+   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.firstname {    
+  color: rgb(235, 235, 235);
+  font-weight: 700;
+}
+
+.lastname {
+  color: rgb(106, 107, 122);
+  font-weight: 400;
+  padding-left: 4px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation > li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+.navigation > li > a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navigation>li>a:hover {
+  color: crimson;
+  transition: all .3s ease-in-out;
+}
+
+.navigation > li > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.navigation > li > img:hover{
+  width: 65px;
+  height: 65px;
+  transition:  all 1 ease-in-out;
+}
+
+.active {
+  background-color: brown;
+  color: white;
+  padding: 15px;
+}
+
+
+.active:hover {
+  color: white !important;
+}
+
+.background {
+  background:url('program.jpg');
+}
+
+dl {
+  position: relative;
+  display: flex;
+  gap: 20%;
+}
+
+dl li {
+  position:relative;
+  list-style: none;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 25%;
+  transform: translateX(-50%) translateY(-450%) ;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/*dl li:hover {
+  z-index: 10000;
+  transform: scale(0.75);
+}*/
+
+dl li:before {
+  content: '';
+  position: absolute;
+  inset: 30px;
+  box-shadow: 0 0 0 10px var(--clr),
+  0 0 0 20px var(--bg), 0 0 0 22px var(--bg);
+  transition: 1.5s;
+
+}
+dl li:hover::before {
+  inset: 0px;
+}
+
+dl li:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+  transform: rotate(45deg);
+}
+
+dl li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--clr);
+  z-index: 10;
+  font-size: 2em;
+  transition: 0.5s;
+}
+dl li:hover a {
+  font-size: 3em;
+  filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+
+footer{
+  background: rgb(37, 36, 36);
+  height: auto;
+  width: 194vh;
+  font-family: "open-sans";
+  padding-top: 40px;
+}
+
+small {
+  font-family: "Roboto", sans-serif;
+  color: rgb(150, 150, 150);
+  position: absolute;
+  justify-content: bottom;
+  align-items: bottom;
+  top: 114.5%;
+  left: 25.5%;
+  transform: translateX(100%) translateY(-50%) ;
+  
+}
+
+h3 {
+  color: white;
+  position: absolute;
+  justify-content: bottom;
+  align-items: bottom;
+  top: 114.5%;
+  left: 25.5%;
+  transform: translateX(100%) translateY(-50%) ;
+}
+
+
+</style>
+
